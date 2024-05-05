@@ -1,0 +1,32 @@
+### Todas las pelis recuperar
+GET http://localhost:1234/movies
+
+###Recuperar una peli por id
+GET http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
+###Recuperar una peli por genre
+GET http://localhost:1234/movies?genre=action
+
+###POST nueva peli
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+{
+    "title": "LaPingaPara",
+    "year": 2024,
+    "director": "Xavier Verdecie Ramos",
+    "duration": 100,
+    "poster": "http://img.fruugo.com/product/4/49/14441494_max.jpg",
+    "genre": [
+      "Sci-Fi",
+      "Drama"
+    ]
+}
+
+###Actualizar una peli
+PATCH  http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+{
+  "year": 1999
+}
