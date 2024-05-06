@@ -12,7 +12,7 @@ POST http://localhost:1234/movies
 Content-Type: application/json
 
 {
-    "title": "LaPingaPara",
+    "title": "UwU",
     "year": 2024,
     "director": "Xavier Verdecie Ramos",
     "duration": 100,
@@ -30,3 +30,6 @@ Content-Type: application/json
 {
   "year": 1999
 }
+
+###Borrar la peli
+PATCH http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
